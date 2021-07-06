@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="200dp"
+    android:src="@drawable/applogo"
+    tools:ignore="MissingConstraints" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="15dp"
+        android:background="#fff"
+
+
+        >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SIGN UP"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="28sp"
+            android:layout_marginBottom="15dp"
+
+            />
+
+        <EditText
+            android:id="@+id/name"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="15dp"
+
+            />
+
+        <EditText
+            android:id="@+id/email"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="15dp"
+
+            />
+
+
+        <EditText
+            android:id="@+id/phone"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone"
+            android:inputType="number"
+            android:layout_marginBottom="15dp"
+
+            />
+
+
+
+
+        <EditText
+            android:id="@+id/address"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:inputType="text"
+            android:layout_marginBottom="15dp"
+
+            />
+        <EditText
+            android:id="@+id/pass"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_marginBottom="15dp"
+
+            />
+
+        <EditText
+            android:id="@+id/confirm_pass"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="confirm your password"
+            android:inputType="textPassword"
+            android:layout_marginBottom="15dp"
+
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:hint="authentication "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Spinner
+                android:id="@+id/authentication"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/auth"
+                android:layout_marginStart="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="15dp"
+                />
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SIGN UP"
+            android:background="@drawable/btn_bg"
+            android:textColor="#fff"
+            android:textSize="22sp"
+            android:layout_marginBottom="15dp"
+            />
+
+
+
+        <TextView
+
+            android:id="@+id/to_login"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:text="Already have acount !! Sign in"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" />
+
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/prog"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="11dp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>

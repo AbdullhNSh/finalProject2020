@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductDetailsActivity">
+    <ImageView
+        android:id="@+id/imgProduct"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:id="@+id/nameproduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgProduct"
+        android:text="Product Name"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:id="@+id/rateproduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameproduct"
+        android:text="Product rate"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:id="@+id/priceproduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rateproduct"
+        android:text="Product Price"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp" />
+
+
+
+
+    <TextView
+        android:id="@+id/catproduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/priceproduct"
+        android:text="Categroy Product "
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp" />
+
+
+
+
+    <LinearLayout
+        android:gravity="center"
+
+        android:layout_below="@id/catproduct"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/mapProduct"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_baseline_location_on_24"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addtocartBtn"
+        android:background="@color/colorPrimaryDark"
+        android:layout_margin="15dp"
+        android:layout_alignParentBottom="true"
+        android:text="ADD TO CART"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        ></Button>
+
+</RelativeLayout>

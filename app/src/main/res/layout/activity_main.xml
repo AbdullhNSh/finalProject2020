@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#FFE6E6"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Username"
+        android:inputType="text"
+        android:layout_margin="5dp" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"
+        android:layout_margin="5dp" />
+
+    <EditText
+        android:id="@+id/txtLevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter User Level"
+        android:inputType="number"
+        android:layout_margin="5dp" />
+
+    <Button
+        android:id="@+id/btnAddUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Add New User"/>
+
+    <Button
+        android:id="@+id/btnGetAllUsers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Get All Users"/>
+
+    <Button
+        android:id="@+id/btnGetAllUsersLimitOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Get All Users by Limit and Order"/>
+
+
+    <Button
+        android:id="@+id/btnGetAllUsersWhere"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Get All Users by Where"/>
+
+    <Button
+        android:id="@+id/btnDeleteUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Delete User by ID"/>
+
+    <Button
+        android:id="@+id/btnDeleteUserField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Delete User Email Field"/>
+
+</LinearLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.ViewProductAdmin"
+    android:orientation="vertical">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_margin="15dp"
+                android:id="@+id/back"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Product"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="200dp"
+                android:textSize="30sp"/>
+
+        </LinearLayout>
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <ImageView
+        android:id="@+id/imgProduct"
+        android:src="@drawable/gallery"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        />
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:text="Name Product  :  "
+
+            android:textSize="25sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/nameproduct"
+            android:layout_marginStart="20dp"
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="25sp"
+            android:text="Price Product  :  "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/priceproduct"
+            android:layout_marginStart="20dp"
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:gravity="center"
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="25sp"
+            android:text="Rate Product  :  "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/rateproduct"
+            android:layout_marginStart="20dp"
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:gravity="center"
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="25sp"
+            android:text="Categroy Product  :  "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/catproduct"
+            android:layout_marginStart="20dp"
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:gravity="center"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+       <ImageView
+           android:id="@+id/mapProduct1"
+           android:layout_width="100dp"
+           android:layout_height="100dp"
+           android:src="@drawable/ic_baseline_location_on_24"/>
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/udpateProduct"
+        android:background="@color/colorPrimaryDark"
+        android:layout_margin="15dp"
+        android:layout_alignParentBottom="true"
+        android:text="update"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        ></Button>
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/deleteProduct"
+        android:background="@color/colorPrimaryDark"
+        android:layout_margin="15dp"
+        android:layout_alignParentBottom="true"
+        android:text="delete"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        ></Button>
+</LinearLayout>
+
+
+
+    </LinearLayout>

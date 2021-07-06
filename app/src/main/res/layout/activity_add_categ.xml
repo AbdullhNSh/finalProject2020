@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.AddCateg"
+    android:orientation="vertical">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_margin="15dp"
+                android:id="@+id/back11"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Add Categories"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="100dp"
+                android:textSize="30sp"/>
+
+        </LinearLayout>
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name1"
+        android:hint="name"
+        android:textColor="#000"
+        android:textSize="30sp"
+        tools:ignore="MissingConstraints" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/gallery"
+        android:id="@+id/img"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+
+        >
+        <Button
+
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="SAVE"
+            android:background="@color/colorAccent"
+            android:id="@+id/save"/>
+
+        <Button
+
+            android:layout_gravity="center"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="BACK"
+            android:id="@+id/back"/>
+
+    </LinearLayout>
+</LinearLayout>

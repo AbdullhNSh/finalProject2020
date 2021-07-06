@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.finalproject2020">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".User.orderUser"></activity>
+        <activity android:name=".ViewProductmorebought" />
+        <activity android:name=".Admin.AddCart" />
+        <activity android:name=".Admin.CatrgoryEdit" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Admin.MapsUpdateProduct"
+            android:label="@string/title_activity_maps_update_product" />
+        <activity android:name=".User.ProdctUser1" />
+        <activity android:name=".SerachActivityUser" />
+        <activity android:name=".User.CatUser" />
+        <activity android:name=".User.UpdateProfileUser" />
+        <activity android:name=".User.ProfileUser" />
+        <activity android:name=".User.UpdateProfile" />
+        <activity android:name=".UpdateProduct" />
+        <activity
+            android:name=".MapsActivity2"
+            android:label="@string/title_activity_maps2" />
+        <activity android:name=".User.ViewProductUser" />
+        <activity
+            android:name=".MapsProduct"
+            android:label="@string/title_activity_maps_product" />
+        <activity android:name=".Admin.ViewProductAdmin" />
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".Admin.AddProduct" />
+        <activity android:name=".Admin.ProductActivity" />
+        <activity android:name=".Admin.CatActivity" />
+        <activity android:name=".UpdateCategori" />
+        <activity android:name=".MainActivity2" />
+        <activity android:name=".Admin.AddCateg" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Admin.MainActivityAdmin" />
+        <activity android:name=".User.MainActivityUser" />
+        <activity android:name=".User.product_user" />
+        <activity android:name=".User.ProfileActivity" />
+        <activity android:name=".Login.RegisterActivity" />
+        <activity android:name=".Login.SplachActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".User.UserActivity" />
+        <activity android:name=".confirmfinal" />
+        <activity android:name=".Login.LoginActivity" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.here..this.library.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+        <meta-data
+            android:name="android.support.FILE_PROVIDER_PATHS"
+            android:resource="@xml/provider_paths_app"
+            tools:replace="android:resource"
+            />
+        </provider>
+
+
+
+
+    </application>
+
+</manifest>
